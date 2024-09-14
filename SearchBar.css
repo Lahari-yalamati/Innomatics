@@ -1,0 +1,92 @@
+/* Center the search bar */
+/* Search bar container is centered at the top */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed; /* Keep the search bar fixed */
+    top: 10%; /* Position at 10% from the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%;
+    z-index: 9999; /* Make sure it stays on top */
+    text-align: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container input {
+    padding-left: 30px; /* Make space for the search icon */
+    padding-right: 40px; /* Space for search button */
+    width: 300px; /* Control the width */
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .search-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Suggestions styling */
+  .react-autosuggest__suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .react-autosuggest__suggestions-container--open {
+    border: 1px solid #ccc;
+    max-width: 300px;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  .react-autosuggest__suggestion {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+  
+  /* Styling for displaying country details */
+  .country-details {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+    text-align: center;
+  }
+  
